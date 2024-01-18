@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.extended-card {
+  background-color: rgb(233, 231, 231);
+  border: 1px solid black;
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  &-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-weight: 800;
+    padding: 8px;
+    min-width: 15vh;
+    max-width: 45vh;
+  }
+  &-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-left: 1px solid black;
+    padding: 7px;
+    &-text {
+      padding: 8px;
+    }
+  }
+}
+.floated-button {
+  display: flex;
+  flex-direction: column;
+}
